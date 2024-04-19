@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Wants to Be a Millionaire?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Who Wants to Be a Millionaire?</h1>
+        <audio autoplay loop muted>
+            <source src="who-want-to-be-a-milionaire-audio.mp3" type="audio/mp3">
+        </audio>
+    </header>
+
+    <main>
+        <section id="question-container">
+            <h2 id="question">Question goes here</h2>
+            <ul id="choices">
+                <!-- Placeholder for answer choices -->
+                <li><button onclick="checkAnswer(this)">Choice A</button></li>
+                <li><button onclick="checkAnswer(this)">Choice B</button></li>
+                <li><button onclick="checkAnswer(this)">Choice C</button></li>
+                <li><button onclick="checkAnswer(this)">Choice D</button></li>
+            </ul>
+        </section>
+
+        <section id="lifelines">
+            <button id="fifty-fifty" onclick="useFiftyFifty()" disabled>50:50</button>
+            <button id="ask-the-audience" onclick="askTheAudience()" disabled>Ask the Audience</button>
+            <button id="walk-away" onclick="walkAway()">Walk Away</button>
+        </section>
+
+        <section id="feedback">
+            <!-- Feedback message will appear here -->
+        </section>
+
+        <section id="result" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score">Your score: 0</p>
+            <!-- Add more result details if needed -->
+        </section>
+
+        <button id="next-question" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    </main>
+
+    <section id="reward-ladder">
+        <h2>Reward Ladder</h2>
+        <ul id="reward-list">
+            <li>1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N1000000</li>
+            <li>2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N2000000</li>
+            <li>3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N3000000</li>
+            <li>4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N4000000</li>
+            <li>5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N5000000</li>
+            <li>6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N6000000</li>
+            <li>7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N7000000</li>
+            <li>8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N8000000</li>
+            <li>9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N9000000</li>
+            <li>10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N10000000</li>
+            <li>11 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N11000000</li>
+            <li>12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N12000000</li>
+            <li>13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N13000000</li>
+            <li>14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N14000000</li>
+            <li>15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; N15000000</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 | Who Want to be a Millionaire?</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
